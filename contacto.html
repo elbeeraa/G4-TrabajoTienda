@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacto</title>
+    <!-- Con esto hace referencia al CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Esto es para importar los iconos de font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <ul class="navbar">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="index.html#catalogo">Catalogo</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li id="carrito"><a href=""><i class="fa fa-cart-plus"></i></a></li>
+    </ul>
+<!-- Aqui se dispone el apartado de contacto que es un formulario para la hora de enviar la información.
+ Este formulario deberia enviar la información al servidor y luego enviarte de nuevo al inicio.-->
+ <form action="index.html">
+   <!-- Información de contacto necesaria -->
+     <h1>Contacto</h1>
+     <p>Teléfono: <i>+34 600 000 000</i></p>
+     <p>Email: <ins>kittykottytiendaonline@tienda.com</ins></p>
+     
+     <!-- Aqui tiene el usuario que poner su información-->
+     <h2>Formulario de contacto</h2>
+     <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre">
+     
+     <label for="correo">Correo electrónico:</label>
+        <input type="text" name="correo" id="correo">
+     
+    <!-- Apartado hecho con un select que hace un selector para que el usuario elija un asunto  -->
+     <label for="selectorAsunto">Asunto:</label>
+        <select name="selectorAsunto" id="selectorAsunto">
+            <option value="consultaAsunto">Consulta sobre devolución</option>
+            <option value="otroAsunto">Otro asunto</option>
+        </select>
+      <!-- Apartado de texto donde el usuario pueda escribirte una información detallada de la consulta-->
+     <label for="mensaje">Mensaje:</label>
+        <textarea name="mensaje" id="mensaje" rows="5" cols="40"></textarea>
+     <br>    
+     <!-- Botón que envia toda la información que ha puesto en contactos-->
+     <input type="submit" value="Enviar mensaje" name="mensaje" id="mensaje">
+ </form>  
+</body>
+</html>
